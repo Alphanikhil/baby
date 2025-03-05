@@ -122,7 +122,7 @@ export default function Quiz() {
                     animate={{ scale: [1, 1.1, 1] }}
                     transition={{ duration: 0.5 }}
                   >
-                    Oops! Try again sweetie! 💕
+                    Oops! Try again Bubu! 💕
                   </motion.h3>
                   <motion.div
                     initial={{ y: 20, opacity: 0 }}
