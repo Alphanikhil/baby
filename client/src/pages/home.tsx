@@ -1,10 +1,28 @@
 import { motion } from "framer-motion";
 import { useLocation } from "wouter";
+import { useState } from "react";
 import Welcome from "@/components/animations/welcome";
 import BearCouple from "@/components/animations/bear-couple";
 
 export default function Home() {
   const [_, setLocation] = useLocation();
+  const [buttonPosition, setButtonPosition] = useState({ x: 0, y: 0 });
+  const [hoverCount, setHoverCount] = useState(0);
+  const buttonTexts = [
+    "Now I'm here!",
+    "Hehe fool, I'm here!",
+    "Ok fine, now you can click"
+  ];
+
+  const moveButton = () => {
+    if (hoverCount < 2) {
+      setButtonPosition({
+        x: Math.random() * 200 - 100,
+        y: Math.random() * 200 - 100,
+      });
+      setHoverCount(hoverCount + 1);
+    }
+  };
 
   return (
     <div className="min-h-screen bg-pink-50 flex flex-col items-center justify-center p-4 relative overflow-hidden">
@@ -26,11 +44,13 @@ export default function Home() {
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
+          onMouseEnter={moveButton}
           onClick={() => setLocation("/quiz")}
           className="bg-pink-400 text-white px-8 py-3 rounded-full shadow-lg 
                    hover:bg-pink-500 transition-colors text-lg font-medium"
+          style={{ transform: `translate(${buttonPosition.x}px, ${buttonPosition.y}px)` }}
         >
-          Click Here Bubu
+          {buttonTexts[hoverCount] || "Click Here Bubu"}
         </motion.button>
       </motion.div>
 
