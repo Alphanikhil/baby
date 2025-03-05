@@ -17,7 +17,7 @@ export default function Home() {
         className="text-center relative z-10"
       >
         <h1 className="text-4xl font-bold text-pink-600 mb-4">
-          Welcome My Love! 💝
+          Welcome Bubu 💝
         </h1>
         <p className="text-xl text-pink-500 mb-8 max-w-md mx-auto">
           I have something special just for you... Hold My Hand and Lets Go..
