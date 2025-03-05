@@ -38,7 +38,8 @@ export default function Home() {
           Welcome Bubu 💝
         </h1>
         <p className="text-xl text-pink-500 mb-8 max-w-md mx-auto">
-          I have something special just for you 🤫 ... Hold my Hand and Lets Goo..!
+          I have something special just for you 🤫 ... 
+             Hold my Hand and Lets Goo..!
         </p>
 
         <motion.button
