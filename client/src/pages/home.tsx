@@ -30,7 +30,7 @@ export default function Home() {
           className="bg-pink-400 text-white px-8 py-3 rounded-full shadow-lg 
                    hover:bg-pink-500 transition-colors text-lg font-medium"
         >
-          Start Your Love Journey
+          Click Here Bubu
         </motion.button>
       </motion.div>
 
