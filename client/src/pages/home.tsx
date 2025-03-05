@@ -17,8 +17,8 @@ export default function Home() {
   const moveButton = () => {
     if (hoverCount < 2) {
       setButtonPosition({
-        x: Math.random() * 200 - 100,
-        y: Math.random() * 200 - 100,
+        x: Math.random() * 300 - 150,
+        y: Math.random() * 300 - 150,
       });
       setHoverCount(hoverCount + 1);
     }
@@ -38,8 +38,7 @@ export default function Home() {
           Welcome Bubu 💝
         </h1>
         <p className="text-xl text-pink-500 mb-8 max-w-md mx-auto">
-          I have something special just for you 🤫 ... 
-             Hold my Hand and Lets Goo..!
+          I have something special just for you 🤫 ... Hold my Hand and Lets Goo..!
         </p>
 
         <motion.button
