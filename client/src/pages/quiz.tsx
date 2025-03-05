@@ -59,6 +59,10 @@ export default function Quiz() {
               <h2 className="text-lg md:text-2xl font-bold text-pink-600 mb-6 text-center break-words max-w-full">
                 {quiz.question}
               </h2>
+              <h6 className="text-lg md:text-2xl font-bold text-pink-600 mb-6 text-center break-words max-w-full">
+               Solve This Question Before Suprise
+              </h6>
+            
               <div className="space-y-3 w-full">
                 {quiz.options.map((option, index) => (
                   <motion.div
